@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #252525;
+  background-color: #f7f2e9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #edc84b;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Playfair Display', serif;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.menu h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #edc84b;
+  margin-bottom: 2rem;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Playfair Display', serif;
+}
+
+.pizza:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pizza img {
+  width: 100%;
+}
+
+.pizza h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.pizza p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.order-btn {
+  background-color: #edc84b;
+  color: #252525;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-top: 2rem;
+}
+
+.order-btn:hover {
+  background-color: #e9bb24;
+  transform: scale(1.05);
+}
+
+.sold-out-notice {
+  font-size: 1.4rem;
+  color: #888;
+  font-style: italic;
+}
+
+.footer {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  color: #333;
+}
